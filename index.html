@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hallotwins Asadito</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fff; /* Fondo blanco */
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      position: relative;
+      max-width: 900px;
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .container img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      display: block;
+    }
+
+    .links {
+      position: absolute;
+      bottom: 20px;
+      right: 30px;
+      text-align: right;
+    }
+
+    .links a {
+      color: #ff9d00;
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-decoration: none;
+      margin-left: 20px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7); /* para que resalte sobre la imagen */
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    /* En móviles se apilan abajo */
+    @media (max-width: 600px) {
+      .links {
+        bottom: 15px;
+        right: 15px;
+        text-align: center;
+        width: 100%;
+      }
+      .links a {
+        display: block;
+        margin: 8px 0;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Imagen del evento -->
+    <img src="https://i.ibb.co/B208rz6r/Screenshot-2025-10-02-at-13-22-15.jpg" alt="Hallotwins Asadito">
+
+    <!-- Enlaces dentro de la imagen -->
+    <div class="links">
+      <a href="https://www.google.com/maps/place/Vive+City+Club/@-0.1438833,-78.4571088,17z/data=!3m1!4b1!4m6!3m5!1s0x91d58fedaf4d4d7b:0x95c1f90f1733f87a!8m2!3d-0.1438833!4d-78.4571088!16s%2Fg%2F11gm_27lgn" target="_blank">UBICACIÓN</a>
+      <a href="https://www.google.com/maps/place/Vive+City+Club/@-0.1438833,-78.4571088,17z/data=!3m1!4b1!4m6!3m5!1s0x91d58fedaf4d4d7b:0x95c1f90f1733f87a!8m2!3d-0.1438833!4d-78.4571088!16s%2Fg%2F11gm_27lgn" target="_blank">CONFIRMAR ASISTENCIA</a>
+    </div>
+  </div>
+</body>
+</html>
