@@ -35,34 +35,34 @@
       position: absolute;
       bottom: 20px;
       right: 30px;
-      text-align: right;
+      display: flex; /* 🔹 Los pone en fila */
+      gap: 20px;     /* espacio entre ellos */
     }
 
     .links a {
       color: #ff9d00;
       font-weight: bold;
       font-size: 1.2rem;
-      text-decoration: none;
-      margin-left: 20px;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.7); /* para que resalte sobre la imagen */
+      text-decoration: underline; /* 🔹 Subrayado */
+      font-style: italic;         /* 🔹 Cursiva */
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7); /* resalta sobre la imagen */
     }
 
     .links a:hover {
       text-decoration: underline;
+      opacity: 0.8;
     }
 
-    /* En móviles se apilan abajo */
+    /* En móviles se apilan */
     @media (max-width: 600px) {
       .links {
-        bottom: 15px;
-        right: 15px;
-        text-align: center;
-        width: 100%;
+ /* 🔹 Uno debajo del otro en móvil */
+        bottom: 40px;
+        align-items: center;
       }
       .links a {
-        display: block;
-        margin: 8px 0;
-        font-size: 1rem;
+        margin: 15px 0;
+        font-size: 10px;
       }
     }
   </style>
